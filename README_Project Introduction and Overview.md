@@ -168,7 +168,7 @@ SET
     [Precipitation] = COALESCE([Precipitation], 0),
     [Snowfall]      = COALESCE([Snowfall], 0),
     [Snow_Depth]    = COALESCE([Snow_Depth], 0),
-    -- If Avg_Temp is missing, but Max_Temp and Min_Temp are present, compute Avg from Max and Min
+    -- If Avg_Temp is missing, but Max_Temp and Min_Temp are present, calculate Avg from Max and Min
     [Avg_Temp]      = CASE 
                          WHEN [Avg_Temp] IS NULL AND [Max_Temp] IS NOT NULL AND [Min_Temp] IS NOT NULL 
                              THEN ([Max_Temp] + [Min_Temp]) / 2 
