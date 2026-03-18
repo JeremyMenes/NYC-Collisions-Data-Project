@@ -57,7 +57,7 @@ def find_nearest_station_by_date(lat, lon, date):
     # logical checks are in the order of most likely -> least likely to occur:
     # First checks if Date is already in cache, which happens most often
     # Second, checks if the date is a date, but a different one (when the code encounters a new date in the sorted table)
-    # Then if that new date is empty for some reason, due to the row not having a date or no stations were found for the date, return None
+    # Then if that new date is empty, due to the row not having a date or no stations were found for the date, return None
     if date in date_cache:
         stations_on_date = date_cache[date]
 
@@ -74,7 +74,7 @@ def find_nearest_station_by_date(lat, lon, date):
             #logger.warning('Date is None, skipping row')
             return None
 
-    # Find the distances of all stations that have weather readings for the current date
+    # Find the distance between the current accident (row) and all stations that have weather readings for the current accident date
     src_coords = Coordinates(lat, lon)
     distances = stations_on_date.apply(
         lambda row: Coordinates(row['StationLat'], row['StationLong']) - src_coords, axis=1)
