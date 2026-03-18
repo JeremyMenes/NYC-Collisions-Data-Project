@@ -1,6 +1,6 @@
-# Introduction
+# [WIP] Introduction
 
-Welcome! This is a personal data project analyzing auto accidents in New York City from 2013-2023. The final results of this project have been published to my [Tableau Public profile.](https://public.tableau.com/app/profile/jeremymenes/viz/NYCCollisions_17336129497660/Dashboard2?publish=yes)
+Welcome! This is a (unfinished!) personal data project analyzing auto accidents in New York City from 2013-2023. The final results of this project have been published to my [Tableau Public profile.](https://public.tableau.com/app/profile/jeremymenes/viz/NYCCollisions_17336129497660/Dashboard2?publish=yes)
 
 The primary purpose of this repository is to showcase my skills with data handling, cleaning, and analysis using SQL and Python. Secondly this will also serve as documentation of my changes to the raw dataset, and the methodologies I used to clean and manipulate the data.
   
